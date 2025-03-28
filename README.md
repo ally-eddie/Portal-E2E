@@ -4,14 +4,21 @@ This project is designed for end-to-end testing using Playwright. It includes va
 
 ## Setup
 
-1. **Install Dependencies**: Run the following command to install the necessary dependencies:
+1. **Install Node.js**: 
+   - Download and install Node.js from [nodejs.org](https://nodejs.org/).
+   - Ensure you are using Node.js version 14 or higher. You can check your version by running:
+     ```bash
+     node -v
+     ```
+
+2. **Install Dependencies**: Run the following command to install the necessary dependencies:
    ```bash
    npm install
    ```
 
-2. **Configure Environment**: Ensure that your environment is set up correctly, including any necessary environment variables or configuration files.
+3. **Configure Environment**: Ensure that your environment is set up correctly, including any necessary environment variables or configuration files.
 
-3. **Run Tests**: You can run the tests using the following command:
+4. **Run Tests**: You can run the tests using the following command:
    ```bash
    npm run test
    ```
@@ -52,6 +59,23 @@ npx playwright test --ui
 ```
 
 This will open the Playwright UI, allowing you to interact with your tests in a more user-friendly manner.
+
+## Folder Structure and Configuration
+
+### Folder Structure
+
+- **`tests/specs/`**: Contains the test specifications and scripts.
+- **`tests/config/`**: Contains configuration files for environment, account, and other parameters.
+- **`tests/testFiles/`**: Contains test-related files, including modified files.
+
+### Setting Up Environment and Account
+
+1. **Environment Configuration**:
+   - Navigate to the `tests/config/` directory.
+   - Modify the `auth.config.ts` file to set up your environment variables and account credentials.
+
+2. **Page Actions Parameters**:
+   - In your test files, you can set parameters for page actions by modifying the relevant configuration files or directly in the test scripts.
 
 ## License
 
